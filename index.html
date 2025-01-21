@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferrari Company Profile</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,
+900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Feather Icones -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <body>
+    <!-- Navbar Start -->
+    
+      <nav class="navbar">
+        <!-- <img class="logo" src="img/logo ferarri.jpg" alt="Logo Ferarri"> -->
+        <a href="img/logo ferarri.jpg" class="navbar-logo"><span>Fera</span>rri</a> 
+          
+        
+        <div class="navbar-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#models">Models</a>
+          <a href="#contact">Contact</a>
+        </div>
+      
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    
+    </nav>
+    
+    <!-- Navbar And -->
+
+    <!-- Hero Section Start -->
+    <main>
+      <section class="hero" id="home">
+        <main class="content">
+        <h1>Welcome to </h1>
+          <h1><span>Ferrari</span></h1>
+        <p>Experience the excellence of speed,
+           luxury, and engineering.</p>
+        <a href="#models" class="btn">Lihat Models</a>
+      </main>
+    </section>
+      <!-- Hero Section Start -->
+
+      <!-- About Section Start -->
+      <section id="about" class="about">
+        <h2><span>Tentang</span> Kami</h2>
+
+        <div class="row">
+          <div class="about-img">
+            <img src="img/Header-ferarri.jpg" alt="Ferrari History" />
+          </div>
+          <div class="content">
+            <h3>Sejarah Ferarri</h3>
+            <p>
+              Ferrari adalah produsen mobil sport mewah asal Italia yang berbasis di Maranello. Didirikan oleh Enzo Ferrari pada tahun 1939, Ferrari dikenal dengan desainnya yang ikonik, performa yang tak tertandingi, dan keahliannya yang
+              tak tertandingi.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About Section Start -->
+
+      <!-- Models Section Start -->
+       <section id="models" class="models">
+        <h2><span>Models</span> Kami</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <img src="img/Ferrari F8 Tributo,.jpg" alt="Toyota Avanza" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Ferarri F8 Tributo</h3>
+            <p class="card-description">F8 Tributo dilengkapi dengan mesin V8 yang sangat kuat.</p>
+            <button
+              class="btn-detail"
+              onclick="showDetail('Ferarri F8 Tributo', 'Ferrari F8 Tributo adalah mobil sport bermesin tengah dengan mesin V8 twin-turbo 3.9 liter yang menghasilkan 710 tenaga kuda dan torsi 770 Nm. Mobil ini dapat melaju dari 0-100 km/jam dalam 2,9 detik dan mencapai kecepatan maksimum sekitar 340 km/jam.', 'img/Ferrari F8 Tributo,.jpg')"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Ferarri 250 GTO.jpg" alt="Toyota Avanza" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Ferarri 250 GTO</h3>
+            <p class="card-description">Ferrari 250 GTO adalah salah satu mobil paling legendaris dalam sejarah otomotif.</p>
+            <button
+              class="btn-detail"
+              onclick="showDetail('Ferarri F8 Tributo', 'Ferrari 250 GTO adalah mobil sport legendaris yang diproduksi antara 1962 hingga 1964 dengan hanya 39 unit yang dibuat. Ditenagai oleh mesin V12 3.0 liter yang menghasilkan 280 hp, mobil ini mampu mencapai kecepatan maksimum sekitar 280 km/jam dan akselerasi 0-100 km/jam dalam 6 detik.', 'img/Ferarri 250 GTO.jpg')"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Ferrari Portofino M.jpg" alt="Toyota Avanza" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Ferrari Portofino M</h3>
+            <p class="card-description">Ferrari Portofino M adalah varian terbaru dari Ferrari Portofino, yang diluncurkan pada 2020.</p>
+            <button
+              class="btn-detail"
+              onclick="showDetail('Ferarri F8 Tributo', 'Ferrari Portofino M adalah convertible grand tourer dengan mesin 3.9-liter V8 twin-turbo yang menghasilkan 620 hp dan torsi 760 Nm. Mobil ini dapat akselerasi dari 0-100 km/jam dalam 3.45 detik dan mencapai kecepatan maksimum 320 km/jam.', 'img/Ferrari Portofino M.jpg')"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Ferrari SF90 Stradale.jpg" alt="Toyota Avanza" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Ferrari SF90 Stradale</h3>
+            <p class="card-description">Mobil MPV yang nyaman dan irit bahan bakar.</p>
+            <button
+              class="btn-detail"
+              onclick="showDetail('Toyota Avanza', 'Ferrari 250 GTO adalah mobil sport legendaris yang diproduksi antara 1962 hingga 1964 dengan hanya 39 unit yang dibuat. Ditenagai oleh mesin V12 3.0 liter yang menghasilkan 280 hp, mobil ini mampu mencapai kecepatan maksimum sekitar 280 km/jam dan akselerasi 0-100 km/jam dalam 6 detik.', 'img/Ferrari SF90 Stradale.jpg')"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Ferrari 812 Superfast.jpg" alt="Toyota Avanza" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Ferrari SF90 Stradale</h3>
+            <p class="card-description">Mobil MPV yang nyaman dan irit bahan bakar.</p>
+            <button
+              class="btn-detail"
+              onclick="showDetail('Toyota Avanza', 'Toyota Avanza adalah mobil keluarga yang sangat populer di Indonesia. Dengan kapasitas tujuh penumpang, mobil ini cocok untuk perjalanan jauh dan sehari-hari. Dilengkapi dengan fitur kenyamanan dan keamanan yang baik.', 'img/Ferrari 812 Superfast.jpg')"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Ferrari F1-75 (2022).jpg" alt="Toyota Avanza" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Toyota Avanza</h3>
+            <p class="card-description">Mobil MPV yang nyaman dan irit bahan bakar.</p>
+            <button
+              class="btn-detail"
+              onclick="showDetail('Toyota Avanza', 'Toyota Avanza adalah mobil keluarga yang sangat populer di Indonesia. Dengan kapasitas tujuh penumpang, mobil ini cocok untuk perjalanan jauh dan sehari-hari. Dilengkapi dengan fitur kenyamanan dan keamanan yang baik.', 'img/Ferrari F1-75 (2022).jpg')"
+            >
+              Detail
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+      <!-- Modal untuk menampilkan detail -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <img id="modal-img" src="" alt="Mobil" class="modal-img" />
+          <p id="modal-description"></p>
+        </div>
+      </div>
+
+      <!-- Models Section And -->
+  
+  
+
+     
+
+ 
+
+    <!-- Contact Sectiom Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span>Kami</h2>
+      <p>Mari Berteman</p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255314.7679711496!2d119.59917838671876!3d-0.9295543000000043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8bf1c7f1b2fc8f%3A0x893923b2f46a3c31!2sKopimu!5e0!3m2!1sid!2sid!4v1735042960542!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          frameborder="0"
+          class="map"
+        >
+        </iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="nohp" />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Sectiom And -->
+    
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#models">Models</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>&copy; 2024 Ferrari. All Rights Reserved.</p>
+    </footer>
+
+      <!-- Feather Icons -->
+      <script>
+        feather.replace();
+      </script>
+
+      <!-- Java Script -->
+      <script src="script.js"></script>
+  </body>
+</html>
